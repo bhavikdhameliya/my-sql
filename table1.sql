@@ -105,3 +105,4 @@ insert into salesman_master(SALESMANNO,SALESMANNAME,ADDRESS1,ADDRESS2,CITY,PINCO
 -- | s00004     | Ashish       | A/5      | Juhu     | mumbai |  400044 | mahrastra |   3500 |      200 |      150 | Good    |
 -- +------------+--------------+----------+----------+--------+---------+-----------+--------+----------+----------+---------+
 
+-- table-(4)
