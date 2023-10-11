@@ -50,7 +50,7 @@ insert into CLIENT_MASTER(
 create table product_master(
     productN0  varchar(6),
     descrption  varchar (15),
-    ProfitPercent float(4,6),
+    ProfitPercent float(6),
     UnitMeasure  varchar (10),
     QtyOnHand   int (8),
     ReorderLv1    int (8),

@@ -1,24 +1,26 @@
 -- join query
-select CLIENT_MASTER.name, PRODUCT_MASTER.DESCRIPTION,SALES_ORDER.ORDERNO  from SALES_ORDER_DETAILS 
-inner join SALES_ORDER on SALES_ORDER_DETAILS.ORDERNO = SALES_ORDER.ORDERNO
-inner join CLIENT_MASTER on SALES_ORDER.CLIENTNO = CLIENT_MASTER.CLIENTNO
-inner join PRODUCT_MASTER on SALES_ORDER_DETAILS.wO = PRODUCT_MASTER.PRODUCTNO;
+select  client_master.NAME,product_master.description,sales_order.ORDERN0 
+from sales_order_details 
+inner join sales_order  on sales_order_details.ORDERN0 = sales_order.ORDERN0 
+inner join client_master on sales_order.CLIENTN0 =  client_master.CLIENTN0
+ inner join  product_master on sales_order_details.productNo = product_master.productNo 
+
 
 +----------------+--------------+---------+
-| name           | DESCRIPTION  | ORDERNO |
+| NAME           | description  | ORDERN0 |
 +----------------+--------------+---------+
-| Hitesh         | T-SHIRTS     | O19001  |
-| Hitesh         | DENIM SHIRTS | O19001  |
-| Hitesh         | PULL OVERS   | O19001  |
-| Hitesh         | SHIRTS       | O19003  |
-| Hitesh         | COTTON JEANS | O19003  |
-| Mamta Muzmudar | T-SHIRTS     | O19002  |
-| Chhaya Bankar  | TROUSERS     | O46865  |
-| Chhaya Bankar  | PULL OVERS   | O46865  |
-| Chhaya Bankar  | T-SHIRTS     | O46865  |
-| Chhaya Bankar  | SHIRTS       | O46865  |
-| Ashwini joshi  | DENIM SHIRTS | O46866  |
-| Ashwini joshi  | LYCRA TOPS   | O46866  |
-| Deepak Sharma  | T-SHIRTS     | O19008  |
-| Deepak Sharma  | LYCRA TOPS   | O19008  |
+| Ivan Bayross   | T-Shirts     | 019001  |
+| Ivan Bayross   | Denim Shirts | 019001  |
+| Ivan Bayross   | Pull Overs   | 019001  |
+| Ivan Bayross   | Shirts       | 019003  |
+| Ivan Bayross   | Cotton jeans | 019003  |
+| Mamta Muzumdar | T-Shirts     | 019002  |
+| Chhaya Bankar  | Trousers     | 046865  |
+| Chhaya Bankar  | Pull Overs   | 046865  |
+| Chhaya Bankar  | T-Shirts     | 046865  |
+| Chhaya Bankar  | Shirts       | 046865  |
+| Ashwini Joshi  | Denim Shirts | 046866  |
+| Ashwini Joshi  | Lycra Tops   | 046866  |
+| Hansel Colaco  | T-Shirts     | 019008  |
+| Hansel Colaco  | Lycra Tops   | 019008  |
 +----------------+--------------+---------+
