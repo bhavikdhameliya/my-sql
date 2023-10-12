@@ -173,24 +173,4 @@ productrate
 ("019008","p07975",5, 3  ,1050);
 
 
---query
 
---1.find out the product,which have been sold to 'lvan Bayross'
-
-select  client_master.NAME,product_master.description,sales_order.ORDERN0 
-from sales_order_details 
-inner join sales_order  on sales_order_details.ORDERN0 = sales_order.ORDERN0 
-inner join client_master on sales_order.CLIENTN0 =  client_master.CLIENTN0
- inner join  product_master on sales_order_details.productNo = product_master.productNo where name = "Ivan Bayross";
-
-+--------------+--------------+---------+
-| NAME         | description  | ORDERN0 |
-+--------------+--------------+---------+
-| Ivan Bayross | T-Shirts     | 019001  |
-| Ivan Bayross | Denim Shirts | 019001  |
-| Ivan Bayross | Pull Overs   | 019001  |
-| Ivan Bayross | Shirts       | 019003  |
-| Ivan Bayross | Cotton jeans | 019003  |
-+--------------+--------------+---------+
-
---2.
